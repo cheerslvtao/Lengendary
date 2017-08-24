@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  Lengendary
+//
+//  Created by SFC-a on 2017/3/18.
+//  Copyright © 2017年 lvtao. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+Gesture.h"
+#import "BaseViewController.h"
+#import "ConstGlobal.h"
+#import "HTTPRequestTool.h"
+#import "ProgressHUD.h"
+
+#define RGB(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+#define UIColorFromHex(s)  [UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0 green:(((s &0xFF00) >>8))/255.0 blue:((s &0xFF))/255.0 alpha:1.0]
+
+
+#define WIDTH_SCREEN [UIScreen mainScreen].bounds.size.width
+#define HEIGHT_SCREEN [UIScreen mainScreen].bounds.size.height
+#define NSUSERDEFAULT [NSUserDefaults standardUserDefaults]
+
+#define Authorization [NSUSERDEFAULT objectForKey:@"Authorization"]
+
+#endif /* PrefixHeader_pch */
